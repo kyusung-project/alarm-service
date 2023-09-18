@@ -1,0 +1,23 @@
+server:
+  port: 8080
+  error:
+    include-exception: true
+    include-message: always
+    include-stacktrace: never
+    whitelabel:
+      enabled: true
+    path: /error
+
+eureka:
+  client:
+    service-url:
+      defaultZone: https://discovery.leekyusung.kr/eureka/
+    register-with-eureka: true
+    fetch-registry: true
+
+springdoc:
+  swagger-ui:
+    path: /api-docs.html
+    enabled: false
+  api-docs:
+    enabled: false

@@ -1,0 +1,23 @@
+server:
+  port: 0
+  error:
+    include-exception: true
+    include-message: always
+    include-stacktrace: always
+    whitelabel:
+      enabled: true
+    path: /error
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: false
+    fetch-registry: false
+
+springdoc:
+  swagger-ui:
+    path: /api-docs.html
+    enabled: true
+  api-docs:
+    enabled: true

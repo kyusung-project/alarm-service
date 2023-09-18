@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: alarm-service
+  profiles:
+    default: local
+
+eureka:
+  instance:
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
