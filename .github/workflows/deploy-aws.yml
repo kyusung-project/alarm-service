@@ -8,11 +8,11 @@ on:
 
 env:
   AWS_REGION: ap-northeast-2
-  ECR_REPOSITORY: alarm
+  ECR_REPOSITORY: alarm-service
   ECS_SERVICE: AlarmService
-  ECS_CLUSTER: AlarmCluster
-  ECS_TASK_DEFINITION: AlarmTaskDefinition
-  CONTAINER_NAME: alarm-container
+  ECS_CLUSTER: KyusungCluster
+  ECS_TASK_DEFINITION: AlarmServiceTaskDefinition
+  CONTAINER_NAME: alarm-service-container
 
 permissions:
   contents: read

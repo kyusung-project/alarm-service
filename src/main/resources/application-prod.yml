@@ -11,7 +11,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: https://discovery.leekyusung.kr/eureka/
+      defaultZone: http://discovery.leekyusung.kr/eureka/
     register-with-eureka: true
     fetch-registry: true
 
