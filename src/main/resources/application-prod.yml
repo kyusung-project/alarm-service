@@ -21,3 +21,10 @@ springdoc:
     enabled: false
   api-docs:
     enabled: false
+
+naver:
+  api:
+    access-key: ${NAVER_ACCESS_KEY}
+    secret-key: ${NAVER_SECRET_KEY}
+    service-id: ${NAVER_SERVICE_ID}
+    phone-number: 01091019320
