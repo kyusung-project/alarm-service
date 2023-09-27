@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 0
   error:
     include-exception: true
     include-message: always

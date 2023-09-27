@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 0
   error:
     include-exception: true
     include-message: always
@@ -11,7 +11,7 @@ server:
 eureka:
   client:
     service-url:
-      defaultZone: http://discovery.leekyusung.kr/eureka/
+      defaultZone: http://localhost:8761/eureka/
     register-with-eureka: true
     fetch-registry: true
 
@@ -21,3 +21,7 @@ springdoc:
     enabled: false
   api-docs:
     enabled: false
+
+logging:
+  file:
+    path: /home/leekyusung/alarm-service/logs
