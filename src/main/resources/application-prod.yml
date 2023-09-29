@@ -24,4 +24,4 @@ springdoc:
 
 logging:
   file:
-    path: /home/leekyusung/alarm-service/logs
+    path: /home/leekyusung/service/alarm/logs
